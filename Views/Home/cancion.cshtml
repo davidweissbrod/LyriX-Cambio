@@ -1,0 +1,36 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+@{
+    Layout = "_Layout";
+}
+<style>
+    .cantainer{
+        text-align: center;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .img-cancion{
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+</style>
+<body>
+    <div class="cantainer">
+        <div class="img-cancion">
+            <img src="@ViewBag.Cancion.fotoCancion" alt="Foto Cancion">
+        </div>
+        <div class="nombres">
+            <h3>@ViewBag.Cancion.nombreCancion</h3>
+            <h5>@ViewBag.Artista.nombre</h5>
+        </div>
+        <div class="barra-de-control">
+            <audio src="@ViewBag.Cancion.audio"></audio>
+        </div>
+    </div>
+</body>
