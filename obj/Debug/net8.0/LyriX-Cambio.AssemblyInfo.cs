@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LyriX-Cambio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fda4a1038f26e5680d4b507aef345ef92b8d8f8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04afa1dc5a567808b39a35f5dd503521c362d3ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("LyriX-Cambio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LyriX-Cambio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
