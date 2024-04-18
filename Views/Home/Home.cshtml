@@ -8,89 +8,42 @@
 <br>
 <br>
 <h5><b>Lo que esta sonando ahora</b></h5>
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-        @foreach (Canciones cancion in ViewBag.listaCanciones)
-        {
-          <div class="carousel-item active" data-bs-interval="10000">
-            <a href='Url.Action("Cancion")'><img src="@cancion.fotoCancion" class="d-block w-100" alt="Canciones"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>@cancion.nombreCancion</h5>
-            </div>
-          </div>
-        }
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div class="card" style="width: 18rem;">
+  @foreach (Canciones cancion in ViewBag.listaCanciones)
+  {
+    <a href='Url.Action("Cancion")'><img src="@cancion.fotoCancion" class="d-block w-100" alt="Canciones"></a>
+    <div class="card-body">
+      <h5>@cancion.nombreCancion</h5> 
+    </div>   
+  }
+  
 </div>
 <br>
 <br>
 <br>
 <h5><b>Los mas pegados</b></h5>
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-        @foreach (Artistas art in ViewBag.listaArtistas)
-        {
-          <div class="carousel-item active" data-bs-interval="10000">
-            <a href='Url.Action("PerfilArtista")'><img src="@art.fotoArtista" class="d-block w-100" alt="Artistas"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>@art.nombre</h5>
-            </div>
-          </div>
-        }
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div class="card" style="width: 18rem;">
+  @foreach (Artistas art in ViewBag.listaArtistas)
+  {
+    <a href='Url.Action("PerfilArtista")'><img src="@art.fotoArtista" class="d-block w-100" alt="Artistas"></a>
+    <div class="card-body">
+      <h5>@art.nombre</h5>
+    </div>  
+  } 
 </div>
 <br>
 <br>
 <br>
 <h5><b>Para escuchar en loop</b></h5>
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-        @foreach (Albumes alb in ViewBag.listaAlbumes)
-        {
-          <div class="carousel-item active" data-bs-interval="10000">
-            <a href='Url.Action("Album")'><img src="@alb.fotoAlbum" class="d-block w-100" alt="Albumes"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>@alb.nombreAlbum</h5>
-            </div>
-          </div>
-        }
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div class="card" style="width: 18rem;">
+  @foreach (Albumes alb in ViewBag.listaAlbumes)
+  {
+    <a href='Url.Action("Album")'><img src="@alb.fotoAlbum" class="d-block w-100" alt="Albumes"></a>
+    <div class="card-body">
+      <h5>@alb.nombreAlbum</h5> 
+    </div>
+  }
 </div>
+  
+  
+  
