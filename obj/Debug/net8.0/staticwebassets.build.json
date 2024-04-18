@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LyriX-Cambio.styles.css",
+      "Identity": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\bundle\\LyriX-Cambio.styles.css",
       "SourceId": "LyriX-Cambio",
       "SourceType": "Computed",
-      "ContentRoot": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/LyriX-Cambio",
       "RelativePath": "LyriX-Cambio.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LyriX-Cambio.styles.css"
+      "OriginalItemSpec": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\bundle\\LyriX-Cambio.styles.css"
     },
     {
-      "Identity": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css",
+      "Identity": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css",
       "SourceId": "LyriX-Cambio",
       "SourceType": "Computed",
-      "ContentRoot": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/LyriX-Cambio",
       "RelativePath": "LyriX-Cambio.bundle.scp.css",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css"
+      "OriginalItemSpec": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css"
     },
     {
       "Identity": "Z:\\programacion\\LyriX-Cambio\\wwwroot\\audio\\rap\\Beyonce & JAY-Z - Apeshit (Lyrics) ft. The Carters.mp3",

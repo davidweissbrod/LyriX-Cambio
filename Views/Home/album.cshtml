@@ -7,27 +7,15 @@
 
 <body>
     <div class="canciones">
-        @foreach (Albumes alb in ViewBag.listaAlbumes)
-        {
             @foreach (Canciones can in ViewBag.listaCanciones)
             {
-                if(can.IdAlbum == alb.IdAlbum){
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"> <audio src="@can.audio">@can.nombreCancion</audio></li>
                         </ul>
                     </div>
-                }
             }
             <div class = "artista">
-            @foreach (Artistas art in ViewBag.listaArtistas)
-            {
-                @if(art.IdArtista == alb.IdArtista){
-                    <img src="@art.fotoArtista" alt="Foto artista">
-                    <p>@art.nombre</p>
-                }
-            }
         </div>   
-        }
     </div>
 </body>

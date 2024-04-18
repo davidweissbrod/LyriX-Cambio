@@ -1,9 +1,9 @@
 {
-  "SerializedFilePath": "z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\project.razor.json",
+  "SerializedFilePath": "z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\project.razor.json",
   "FilePath": "z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
-    "LanguageVersion": "8.0",
+    "LanguageVersion": "7.0",
     "Extensions": [
       {
         "ExtensionName": "MVC-3.0"

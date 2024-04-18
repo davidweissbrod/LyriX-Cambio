@@ -100,8 +100,9 @@ public class HomeController : Controller
     }
 
     public IActionResult Album(int IdAlb){
-        ViewBag.Album = BD.ObtenerAlbumPorId(IdAlb);
+        ViewBag.AlbumVal = BD.ObtenerAlbumPorId(IdAlb);
         ViewBag.listaCanciones = BD.ObtenerCancionesPorAlbum(IdAlb);
+        ViewBag.ArtistaAlb = BD.ObtenerArtistaPorId(ViewBag.AlbumVal.IdArtista);
         return View("Album");
     }
 

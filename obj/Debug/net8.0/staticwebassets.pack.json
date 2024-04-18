@@ -1,7 +1,7 @@
 {
   "Files": [
     {
-      "Id": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css",
+      "Id": "Z:\\programacion\\LyriX-Cambio\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LyriX-Cambio.bundle.scp.css",
       "PackagePath": "staticwebassets\\LyriX-Cambio.bundle.scp.css"
     },
     {
@@ -785,19 +785,19 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LyriX-Cambio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.LyriX-Cambio.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LyriX-Cambio.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.LyriX-Cambio.props",
       "PackagePath": "build\\LyriX-Cambio.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LyriX-Cambio.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.LyriX-Cambio.props",
       "PackagePath": "buildMultiTargeting\\LyriX-Cambio.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LyriX-Cambio.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.LyriX-Cambio.props",
       "PackagePath": "buildTransitive\\LyriX-Cambio.props"
     }
   ],

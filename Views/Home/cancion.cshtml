@@ -29,7 +29,9 @@
             <a href="Url.Action('Home', 'PerfilArtista')"><h5>@ViewBag.Artista.nombre</h5></a>
         </div>
         <div class="barra-de-control">
-            <audio src="@ViewBag.Cancion.audio"></audio>
+            <audio controls>
+                <source src="@ViewBag.Cancion.audio" type="audio/ogg">
+            </audio>
         </div>
     </div>
 </body>
