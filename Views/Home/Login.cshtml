@@ -79,6 +79,21 @@
         button[type="submit"]:hover {
           background-color: #e590f7;
         }
+        .btn-volver {
+    margin-top: 20px;
+    background-color: #e27fd5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-volver:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
@@ -93,6 +108,7 @@
 
     <button type="submit">Iniciar Sesión</button>
   </form>
+    <button class="btn-volver" onclick="goBack()">Volver</button>
     <footer></footer>
 </body>
 </html>

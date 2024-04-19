@@ -2,13 +2,15 @@
     $.ajax({
         type: 'POST',
         dataType: 'JSON',
-        url: '/Home/VerDescripcionJugador',
-        data: {IdArtista : idArt},
+        url: '/Home/ModalArtista',
+        data: {IdAr : idArt},
         success:
         function (response){
-            $('#NombreJugador').html(response.nombre);
-            $('#Descripcion').html("src", "/" + response.descripcion);
-            $('#FotoDescripcion').attr(response.fotoDescripcion);
+            $('#NombreArtista').html(response.nombre);
+            $('#Descripcion').html(response.descripcion);
         }
     })
+}
+function goBack() {
+    window.history.back();
 }

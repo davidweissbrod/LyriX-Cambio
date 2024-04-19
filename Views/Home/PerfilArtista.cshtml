@@ -107,14 +107,34 @@
 .btn-modal{
     background-color: #e27fd5;
 }
+
+.btn-volver {
+    margin-top: 20px;
+    background-color: #e27fd5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-volver:hover {
+    background-color: #0056b3;
+}
 </style>
 <body>
     <div class="perfil-container">
        <img src="/@ViewBag.Arti.fotoArtista" alt="Foto del artista" class = "pfp">
         <div class="nombre-redes">
             <h1>@ViewBag.Arti.nombre</h1>
-            <span><a href="https://instagram.com/@ViewBag.Arti.instagram"><img src="/img/redes/ig.jpg" alt="img ig"></a></span>
-            <span><a href="https://twitter.com/@ViewBag.Arti.twitter"><img src="/img/redes/tw.jpg" alt="img tw"></a></span>
+            @if(ViewBag.Arti.instagram != "-"){
+                <span><a href="@ViewBag.Arti.instagram"><img src="/img/redes/ig.jpg" alt="img ig"></a></span>
+            }
+            @if(ViewBag.Arti.twitter != "-"){
+                <span><a href="@ViewBag.Arti.twitter"><img src="/img/redes/tw.jpg" alt="img tw"></a></span>
+            }
         </div>
        <div class="canciones">
             @foreach (Canciones can in ViewBag.listaCanciones)
@@ -134,7 +154,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id = "FotoDescripcion"></div>
                     <div id = "Descripcion"></div>
                 </div>
                 <div class="modal-footer">
@@ -143,4 +162,5 @@
             </div>
         </div>
     </div>
+    <button class="btn-volver" onclick="goBack()">Volver</button>
 </body>
