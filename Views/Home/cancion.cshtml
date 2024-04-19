@@ -3,7 +3,7 @@
     Layout = "_Layout";
 }
 <style>
-   .cantainer {
+.container {
     display: flex; 
     align-items: center; 
     gap: 20px; 
@@ -22,14 +22,8 @@
 }
 
 .nombres h3 {
-    font-size: 18px; 
+    font-size: 25px; 
     color: #333; 
-    margin: 0; 
-}
-
-.nombres h5 {
-    font-size: 14px; 
-    color: #666; 
     margin: 0; 
 }
 
@@ -61,14 +55,17 @@
         <div class="img-cancion">
             <img src="/@ViewBag.Cancion.fotoCancion" alt="Foto Cancion">
         </div>
+        <br>
         <div class="nombres">
             <h3>@ViewBag.Cancion.nombreCancion</h3> 
         </div>
+        <br>
         <div class="barra-de-control">
             <audio controls>
                 <source src="/@ViewBag.Cancion.audio" type="audio/ogg">
             </audio>
         </div>
     </div>
+    <br>
     <button class="btn-volver" onclick="goBack()">Volver</button>
 </body>

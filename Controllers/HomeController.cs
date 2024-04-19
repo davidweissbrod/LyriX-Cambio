@@ -38,7 +38,10 @@ public class HomeController : Controller
             return View("Login");
         }
     }
-
+    public IActionResult Layout(int idUsuario){
+        ViewBag.User = BD.ObtenerInfoUser(idUsuario);
+        return View("_Layout");
+    }
     public IActionResult Perfil(int IdUsuario)
     {
         ViewBag.User = BD.ObtenerInfoUser(IdUsuario);

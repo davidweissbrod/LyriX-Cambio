@@ -53,7 +53,7 @@
         }
         
         input[type="text"],
-        input[type="con"] {
+        input[type="password"] {
           width: calc(100% - 12px);
           padding: 10px;
           margin-bottom: 20px;
@@ -80,36 +80,45 @@
           background-color: #e590f7;
         }
         .btn-volver {
-    margin-top: 20px;
-    background-color: #e27fd5;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+          text-align: center;
+          margin-top: 20px;
+          background-color: #e27fd5;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s;
+    }
 .btn-volver:hover {
     background-color: #0056b3;
 }
-    </style>
+.navbar {
+  display: none; 
+}
+.content {
+  margin-top: 50px; 
+}
+.volver{
+  text-align: center;
+}
+</style>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
   <form action = '@Url.Action("ingresoLogin")' method="post">
     <label for="nom">Nombre de usuario:</label>
     <input type="text" id="nom" name="nom" required>
 
     <label for="con">Contraseña:</label>
-    <input type="con" id="con" name="con" required>
+    <input type="password" id="con" name="con" required>
 
     <button type="submit">Iniciar Sesión</button>
   </form>
+  <div class = "volver">
     <button class="btn-volver" onclick="goBack()">Volver</button>
-    <footer></footer>
+  </div>
 </body>
 </html>
 
