@@ -3,58 +3,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil de Usuario</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    .profile-container {
-      background-color: #ff69b4; 
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-
-    .profile-picture {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #000; 
-      margin: 0 auto 20px;
-      overflow: hidden;
-    }
-
-    .profile-picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    h1, p {
-      margin: 0;
-    }
-  </style>
   @{
     Layout = "_Layout";
-}
+  }
 </head>
-<body>
 
+<style>
+   .profile-container {
+    width: 60%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.profile-picture img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 3px solid #3498db; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+.profile-container h1 {
+    font-size: 24px; 
+    color: #333; 
+    margin: 0; 
+    padding-top: 10px; 
+}
+  </style>
+<body>
   <div class="profile-container">
     <div class="profile-picture">
-      <span><img src="@ViewBag.fotoUsuario" alt="Imagen de perfil"></span>
+      <span><img src="/@ViewBag.fotoUsuario" alt="Imagen de perfil"></span>
     </div>
-    <h1>Nombre de Usuario</h1>
-    <p>Descripción del usuario</p>
+    <h1>@ViewBag.User.nombreUser</h1>
   </div>
 </body>
 </html>

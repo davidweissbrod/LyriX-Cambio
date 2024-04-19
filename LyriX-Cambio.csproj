@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="dapper" Version="2.1.44" />
+    <PackageReference Include="dapper" Version="2.1.35" />
     <PackageReference Include="system.data.sqlclient" Version="4.8.6" />
   </ItemGroup>
 

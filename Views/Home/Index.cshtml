@@ -1,79 +1,145 @@
 ﻿@{
     ViewData["Title"] = "Layout.cshtml";
 }
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href='@Url.Action("Login")'>Iniciar Sesion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href='@Url.Action("Registro")'>Crear Cuenta</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <style>
 
-  .funcionalidades{
-    border-radius: 5px;
-  }
-  .nombre h1{
-    font-size: 80px;
-  }
-  .funcionalidades{
-    display: flex;
-    justify-content: flex-start;
-  }
-  .funcionalidades img{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 400px;
-    height: 200px;
-    margin-right: 10px;
-    border-radius: 5px;
-  }
-  .musica-del-momento{
-    display: flex;
-    justify-content: flex-end;
-  }
-  .musica-del-momento img{
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 400px;
-    height: 200px;
-    margin-right: 10px;
-    border-radius: 5px;
-  }
+    .button-container {
+        display: flex; 
+        flex-direction: row; 
+        gap: 10px; 
+        top: 10px; 
+        right: 10px; 
+      }
+    
+    .btn-iniciar, .btn-cerrar {
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        transition: background-color 0.3s, color 0.3s; 
+        cursor: pointer; 
+    }
+    
+    .btn-iniciar {
+        background-color: #e27fd5; 
+        color: white; 
+    }
+    
+    .btn-cerrar {
+        background-color: #e27fd5; 
+        color: white; 
+    }
+    
+    .btn-iniciar a, .btn-cerrar a {
+        color: inherit; 
+        text-decoration: none; 
+    }
+    
+    .conteiner {
+        width: 80%; 
+        margin: 0 auto; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    
+    .nombre {
+        text-align: left; 
+        margin-bottom: 30px; 
+    }
+    
+    .nombre h1 {
+        font-size: 70px; 
+        color: #eb8dee; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .nombre h4 {
+        font-size: 30px; 
+        color: #666; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .funcionalidades {
+        text-align: center; 
+        margin-bottom: 40px; 
+    }
+    
+    .funcionalidades h3 {
+        font-size: 40px; 
+        color: #333; 
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .funcionalidades img {
+        width: 45%; 
+        height: auto; 
+        margin: 10px; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        
+    }
+    
+    .funcionalidades p {
+        font-size: 50px; 
+        color: #666; 
+        margin-top: 20px; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+     
+    .musica-del-momento {
+        margin-left: 220px;
+        margin-bottom: 40px; 
+    }
+
+    .musica-del-momento h4 {
+        font-size: 30px; 
+        color: #333; 
+        margin-bottom: 20px; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }   
+
+    .musica-del-momento img {
+        width: 500px; 
+        height: 300px; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    .musica-del-momento i {
+        display: block; 
+        font-size: 16px; 
+        color: #666; 
+        margin-top: 10px; 
+        margin-bottom: 20px; 
+    }
+    
 </style>
-<div class="conteiner">
-    <div class="nombre">
-        <h1>LyriX</h1>
-        <h4>Looking for the sound</h4>
-    </div>
-    <br>
-    <div class="funcionalidades">
-        <h3>Disfruta de nuestras funcionalidades</h3>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/hombre-gimnasio-64cbb3485a65d.jpg" alt="Hombre en el gimnasio escucando musica">
-        <img src="https://s1.eestatic.com/2023/08/03/actualidad/783932448_235153221_1706x960.jpg" alt="Mujer escuchando musica">
-        <p>Escucha siempre, donde y cuando quieras</p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="musica-del-momento">
-        <h4>Escucha la musica del momento</h4>
-        <img src="https://news.mc/wp-content/uploads/2023/10/0987268D-B281-451E-B03F-A1CF8A57D15E_1_201_a-1280x640.jpeg" alt="Cancion Bad Bunny">
-        <i><p>Monaco - Bad Bunny</p></i>
-        <img src="https://resizer.glanacion.com/resizer/v2/bizarrap-anuncio-una-nueva-session-junto-a-milo-j-76EK6EWL45G4RISXDCZYAOVOS4.jpg?auth=0cdfe18b1f14fbf9c81450373b53d55a5c9faabb7c54f13863a63e149b03cfc2&width=768&quality=70&smart=false" alt="Cancion Bizarrap">
-        <i><p>Bzrp Music Sessions #57 - Bizarrap ft. Milo J</p></i>
+    
+    <button class = "btn-iniciar"><a class="nav-link active" aria-current="page" href='@Url.Action("Login")'>Iniciar Sesion</a></button>
+    <button class = "btn-cerrar"><a class="nav-link active" aria-current="page" href='@Url.Action("Registro")'>Crear Cuenta</a></button>
+    
+    <div class="conteiner">
+        <div class="nombre">
+            <h1>LyriX</h1>
+            <h4>Looking for the sound</h4>
+        </div>
+        <br>
+        <div class="funcionalidades">
+            <h3>Disfruta de nuestras funcionalidades</h3>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hombre-gimnasio-64cbb3485a65d.jpg" alt="Hombre en el gimnasio escucando musica">
+            <img src="https://s1.eestatic.com/2023/08/03/actualidad/783932448_235153221_1706x960.jpg" alt="Mujer escuchando musica">
+            <p>Escucha siempre, donde y cuando quieras</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="musica-del-momento">
+          <h4>Escucha la musica del momento</h4>
+          <div class="imagenes">
+            <img src="https://news.mc/wp-content/uploads/2023/10/0987268D-B281-451E-B03F-A1CF8A57D15E_1_201_a-1280x640.jpeg" alt="Cancion Bad Bunny">
+            <img src="https://resizer.glanacion.com/resizer/v2/bizarrap-anuncio-una-nueva-session-junto-a-milo-j-76EK6EWL45G4RISXDCZYAOVOS4.jpg?auth=0cdfe18b1f14fbf9c81450373b53d55a5c9faabb7c54f13863a63e149b03cfc2&width=768&quality=70&smart=false" alt="Cancion Bizarrap">
+          </div>
+            <i><p>Monaco - Bad Bunny</p></i>
+            <i><p>Bzrp Music Sessions #57 - Bizarrap ft. Milo J</p></i>
     </div>

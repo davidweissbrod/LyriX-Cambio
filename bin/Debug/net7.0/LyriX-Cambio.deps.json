@@ -8,18 +8,18 @@
     ".NETCoreApp,Version=v7.0": {
       "LyriX-Cambio/1.0.0": {
         "dependencies": {
-          "Dapper": "2.1.44",
+          "Dapper": "2.1.35",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
           "LyriX-Cambio.dll": {}
         }
       },
-      "Dapper/2.1.44": {
+      "Dapper/2.1.35": {
         "runtime": {
           "lib/net7.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.44.46364"
+            "fileVersion": "2.1.35.13827"
           }
         }
       },
@@ -106,12 +106,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Dapper/2.1.44": {
+    "Dapper/2.1.35": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L6Zdsn0mZY5+UxF2iag/X1an0g+rsPHVswsibunLvHUqby8CyYq5RoVnic1iz/hCtIcqDRTl31Aiu5JXiTyohA==",
-      "path": "dapper/2.1.44",
-      "hashPath": "dapper.2.1.44.nupkg.sha512"
+      "sha512": "sha512-YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+      "path": "dapper/2.1.35",
+      "hashPath": "dapper.2.1.35.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",

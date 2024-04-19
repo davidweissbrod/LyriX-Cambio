@@ -5,20 +5,104 @@
     }   
 </head>
 <style>
-    .nombre-redes img{
-        display: flex;
-        border-radius: 100%;
-        height: 70px;
-        width: 70px;
-        margin-right: 10px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .pfp{
-        border-radius: 100%;
-        height: 500px;
-        width: 500px;
-    }
+.perfil-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pfp {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #405664; 
+}
+
+
+.nombre-redes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nombre-redes h1 {
+    font-size: 30px; 
+    color: #333; 
+}
+
+.nombre-redes span img {
+    width: 24px; 
+    height: 24px;
+    margin-right: 5px; 
+    cursor: pointer;
+    transition: transform 0.3s; 
+}
+
+.nombre-redes span img:hover {
+    transform: scale(1.2); 
+}
+
+.canciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.canciones img {
+    width: 500px; 
+    height: 500px;
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+.canciones h3 {
+    font-size: 18px; 
+    color: #555; 
+    margin: 0; 
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-img {
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 18px; 
+    margin: 0;
+}
+
+.card-img:hover {
+    transform: scale(1.05); 
+}
 </style>
 <body>
     <div class="perfil-container">
@@ -39,10 +123,10 @@
         </div>
         <div class="descripcion">
             <div class="card" style="width: 18rem;">
-                        <div class="card text-bg-dark">
-                            <img src="@ViewBag.Arti.fotoDescripcion" class="card-img" alt="Foto descripcion">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">@ViewBag.Arti.nombre</h5>
+                <div class="card text-bg-dark">
+                    <img src="@ViewBag.Arti.fotoDescripcion" class="card-img" alt="Foto descripcion">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">@ViewBag.Arti.nombre</h5>
                                 <div class="modal" tabindex="-1" id = "MostrarDescripcion">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -62,7 +146,7 @@
                                 </div>
                             </div>
                         </div>
+                </div>
             </div>
         </div>
-    </div>
 </body>

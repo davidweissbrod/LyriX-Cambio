@@ -15090,7 +15090,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper\">\r\n            <summary>\r\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;span&gt; elements with an <c>asp-validation-for</c>\r\n            attribute.\r\n            </summary>\r\n        </member>",
+        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper\">\r\n            <summary>\r\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-for</c>\r\n            attribute.\r\n            </summary>\r\n        </member>",
         "CaseSensitive": false,
         "TagMatchingRules": [
           {
@@ -15125,7 +15125,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper\">\r\n            <summary>\r\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;div&gt; elements with an <c>asp-validation-summary</c>\r\n            attribute.\r\n            </summary>\r\n        </member>",
+        "Documentation": "<member name=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper\">\r\n            <summary>\r\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-summary</c>\r\n            attribute.\r\n            </summary>\r\n        </member>",
         "CaseSensitive": false,
         "TagMatchingRules": [
           {

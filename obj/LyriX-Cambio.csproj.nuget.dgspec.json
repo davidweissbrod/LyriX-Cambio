@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj": {}
+    "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj": {}
   },
   "projects": {
-    "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj": {
+    "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj",
+        "projectUniqueName": "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj",
         "projectName": "LyriX-Cambio",
-        "projectPath": "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj",
-        "packagesPath": "C:\\Users\\47436755\\.nuget\\packages\\",
-        "outputPath": "Z:\\programacion\\LyriX-Cambio\\obj\\",
+        "projectPath": "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\LyriX-Cambio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\47436755\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,7 +42,7 @@
           "dependencies": {
             "dapper": {
               "target": "Package",
-              "version": "[2.1.44, )"
+              "version": "[2.1.35, )"
             },
             "system.data.sqlclient": {
               "target": "Package",
@@ -72,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.2.23157.25\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -38,3 +38,14 @@ Z:\programacion\LyriX-Cambio\obj\Debug\net7.0\refint\LyriX-Cambio.dll
 Z:\programacion\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.pdb
 Z:\programacion\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.genruntimeconfig.cache
 Z:\programacion\LyriX-Cambio\obj\Debug\net7.0\ref\LyriX-Cambio.dll
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.csproj.AssemblyReference.cache
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.AssemblyInfoInputs.cache
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.AssemblyInfo.cs
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.csproj.CoreCompileInputs.cache
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.RazorAssemblyInfo.cache
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.RazorAssemblyInfo.cs
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.dll
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\refint\LyriX-Cambio.dll
+C:\Users\David\LyriX-Cambio\obj\Debug\net7.0\LyriX-Cambio.pdb

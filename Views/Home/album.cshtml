@@ -9,13 +9,11 @@
     <div class="canciones">
             @foreach (Canciones can in ViewBag.listaCanciones)
             {
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"> <audio src="@can.audio">@can.nombreCancion</audio></li>
-                        </ul>
-                    </div>
-            }
-            <div class = "artista">
-        </div>   
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> <audio src="@can.audio">@can.nombreCancion</audio></li>
+                    </ul>
+                </div>
+            }   
     </div>
 </body>

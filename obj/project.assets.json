@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Dapper/2.1.44": {
+      "Dapper/2.1.35": {
         "type": "package",
         "compile": {
           "lib/net7.0/Dapper.dll": {
@@ -163,22 +163,20 @@
     }
   },
   "libraries": {
-    "Dapper/2.1.44": {
-      "sha512": "L6Zdsn0mZY5+UxF2iag/X1an0g+rsPHVswsibunLvHUqby8CyYq5RoVnic1iz/hCtIcqDRTl31Aiu5JXiTyohA==",
+    "Dapper/2.1.35": {
+      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
       "type": "package",
-      "path": "dapper/2.1.44",
+      "path": "dapper/2.1.35",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.1.44.nupkg.sha512",
+        "dapper.2.1.35.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
         "lib/net5.0/Dapper.dll",
         "lib/net5.0/Dapper.xml",
-        "lib/net6.0/Dapper.dll",
-        "lib/net6.0/Dapper.xml",
         "lib/net7.0/Dapper.dll",
         "lib/net7.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
@@ -502,29 +500,24 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "dapper >= 2.1.44",
+      "dapper >= 2.1.35",
       "system.data.sqlclient >= 4.8.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47436755\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj",
+      "projectUniqueName": "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj",
       "projectName": "LyriX-Cambio",
-      "projectPath": "Z:\\programacion\\LyriX-Cambio\\LyriX-Cambio.csproj",
-      "packagesPath": "C:\\Users\\47436755\\.nuget\\packages\\",
-      "outputPath": "Z:\\programacion\\LyriX-Cambio\\obj\\",
+      "projectPath": "C:\\Users\\David\\LyriX-Cambio\\LyriX-Cambio.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\LyriX-Cambio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\47436755\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -552,7 +545,7 @@
         "dependencies": {
           "dapper": {
             "target": "Package",
-            "version": "[2.1.44, )"
+            "version": "[2.1.35, )"
           },
           "system.data.sqlclient": {
             "target": "Package",
@@ -578,7 +571,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.2.23157.25\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,34 +3,59 @@
     Layout = "_Layout";
 }
 <style>
-    .cantainer{
-        display: flex;
-        justify-content: center;
-    }
-    img{
-        height: 500px;
-        width: 500px;
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-    .img-cancion{
-        height: 500px;
-        width: 500px;
-        margin: auto;
-    }
+   .cantainer {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 10px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.img-cancion img {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 8px; /
+    object-fit: cover; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.nombres h3 {
+    font-size: 18px; 
+    color: #333; 
+    margin: 0; 
+}
+
+.nombres h5 {
+    font-size: 14px; 
+    color: #666; 
+    margin: 0; 
+}
+
+.nombres a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s; 
+}
+
+.barra-de-control audio {
+    width: 100%; 
+    outline: none; 
+}
 </style>
 <body>
     <div class="cantainer">
         <div class="img-cancion">
-            <img src="@ViewBag.Cancion.fotoCancion" alt="Foto Cancion">
+            <img src="/@ViewBag.Cancion.fotoCancion" alt="Foto Cancion">
         </div>
         <div class="nombres">
             <h3>@ViewBag.Cancion.nombreCancion</h3>
-            <a href="Url.Action('Home', 'PerfilArtista')"><h5>@ViewBag.Artista.nombre</h5></a>
+            <a href="@Url.Action('Home', 'PerfilArtista')"><h5>@ViewBag.Artista.nombre</h5></a>
         </div>
         <div class="barra-de-control">
             <audio controls>
-                <source src="@ViewBag.Cancion.audio" type="audio/ogg">
+                <source src="/@ViewBag.Cancion.audio" type="audio/ogg">
             </audio>
         </div>
     </div>
