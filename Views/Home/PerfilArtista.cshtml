@@ -106,7 +106,7 @@
 </style>
 <body>
     <div class="perfil-container">
-       <img src="@ViewBag.Arti.fotoArtista" alt="Foto del artista" class = "pfp">
+       <img src="/@ViewBag.Arti.fotoArtista" alt="Foto del artista" class = "pfp">
         <div class="nombre-redes">
             <h1>@ViewBag.Arti.nombre</h1>
             <span><img src="/img/redes/ig" alt="img ig"></span>
@@ -116,7 +116,7 @@
             @foreach (Canciones can in ViewBag.listaCanciones)
             {
                 if(ViewBag.Arti.IdArtista == can.IdArtista){
-                    <img src="@can.fotoCancion" alt="Foto cancion">
+                    <img src="/@can.fotoCancion" alt="Foto cancion">
                     <h3>@can.nombreCancion</h3>
                 }
             }

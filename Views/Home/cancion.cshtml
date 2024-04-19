@@ -39,10 +39,6 @@
     transition: color 0.3s; 
 }
 
-.barra-de-control audio {
-    width: 100%; 
-    outline: none; 
-}
 </style>
 <body>
     <div class="cantainer">
@@ -51,7 +47,7 @@
         </div>
         <div class="nombres">
             <h3>@ViewBag.Cancion.nombreCancion</h3>
-            <a href="@Url.Action('Home', 'PerfilArtista')"><h5>@ViewBag.Artista.nombre</h5></a>
+            
         </div>
         <div class="barra-de-control">
             <audio controls>
