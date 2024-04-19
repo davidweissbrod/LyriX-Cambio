@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3rsMPo/ICpLwR4GbqQNoQsQLW1Qb1xJGRmMiEueMQpw=",
+  "Hash": "1ba9svQXp/iAb1/eIOz4BtpCp/2owVlu+u4lGsqMvBw=",
   "Source": "LyriX-Cambio",
   "BasePath": "_content/LyriX-Cambio",
   "Mode": "Default",
@@ -2696,12 +2696,12 @@
       "OriginalItemSpec": "wwwroot\\img\\FotosArtistas\\Ysy_Img.jpg"
     },
     {
-      "Identity": "Z:\\LyriX-Cambio\\wwwroot\\img\\redes\\ig.webp",
+      "Identity": "Z:\\LyriX-Cambio\\wwwroot\\img\\redes\\ig.jpg",
       "SourceId": "LyriX-Cambio",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\LyriX-Cambio\\wwwroot\\",
       "BasePath": "_content/LyriX-Cambio",
-      "RelativePath": "img/redes/ig.webp",
+      "RelativePath": "img/redes/ig.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2712,15 +2712,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\redes\\ig.webp"
+      "OriginalItemSpec": "wwwroot\\img\\redes\\ig.jpg"
     },
     {
-      "Identity": "Z:\\LyriX-Cambio\\wwwroot\\img\\redes\\tw.avif",
+      "Identity": "Z:\\LyriX-Cambio\\wwwroot\\img\\redes\\tw.jpg",
       "SourceId": "LyriX-Cambio",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\LyriX-Cambio\\wwwroot\\",
       "BasePath": "_content/LyriX-Cambio",
-      "RelativePath": "img/redes/tw.avif",
+      "RelativePath": "img/redes/tw.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2731,7 +2731,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\redes\\tw.avif"
+      "OriginalItemSpec": "wwwroot\\img\\redes\\tw.jpg"
     },
     {
       "Identity": "Z:\\LyriX-Cambio\\wwwroot\\js\\site.js",

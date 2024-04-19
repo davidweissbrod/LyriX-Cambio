@@ -1,19 +1,75 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        
+    .container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.img-album img {
+    max-width: 300px;
+    height: auto;
+}
+
+.nombres h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.btn-volver {
+    margin-top: 20px;
+    background-color: #e27fd5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+a{
+    text-decoration: none;
+}
+.btn-volver:hover {
+    background-color: #0056b3;
+}
+    </style>
 </head>
 @{
     Layout = "_Layout";
 }
 
 <body>
-    <div class="canciones">
+    <div class="container">
+        <div class="img-album">
+            <img src="/@ViewBag.AlbumVal.fotoAlbum" alt="Foto Album" class="img-medium"> 
+        </div>
+        <div class="nombres">
+            <h3>@ViewBag.AlbumVal.nombreAlbum</h3>
+        </div>
+        <div class="canciones">
             @foreach (Canciones can in ViewBag.listaCanciones)
             {
                 <div class="card" style="width: 18rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> <audio src="@can.audio">@can.nombreCancion</audio></li>
+                        <a href='@Url.Action("Cancion", new {idCan = can.IdCancion})'><li class="list-group-item">@can.nombreCancion</li></a>
+                        <br>
                     </ul>
                 </div>
             }   
+            <a href="Url.Action('Home')"><button class="btn-volver">Volver</button></a>
+        </div>
     </div>
 </body>

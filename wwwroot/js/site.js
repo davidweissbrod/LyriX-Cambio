@@ -1,4 +1,14 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿function MostrarDescripcion(idArt){
+    $.ajax({
+        type: 'POST',
+        dataType: 'JSON',
+        url: '/Home/VerDescripcionJugador',
+        data: {IdArtista : idArt},
+        success:
+        function (response){
+            $('#NombreJugador').html(response.nombre);
+            $('#Descripcion').html("src", "/" + response.descripcion);
+            $('#FotoDescripcion').attr(response.fotoDescripcion);
+        }
+    })
+}
